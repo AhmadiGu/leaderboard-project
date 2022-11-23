@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Playfair+Display&family=Poppins:wght@200;300;400;500;700&display=swap');
+
+* {
+  margin: 0%;
+  padding: 0%;
+  border: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+header,
+footer {
+  height: 30px;
+  background-color: whitesmoke;
+  box-shadow: 2px 2px 5px rgb(218, 116, 133), -2px -2px 2px rgb(228, 89, 112);
+}
+
+p {
+  font-size: 25px;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+button {
+  font-size: 18px;
+  padding: 4px 10px;
+  border-radius: 5px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  height: 90.5vh;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  height: 65vh;
+  gap: 90px;
+  margin-top: 20px;
+}
+
+.recent-score {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  box-shadow: 2px 2px 5px rgb(228, 89, 112), -2px -2px 2px rgb(228, 89, 112);
+}
+
+.title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 8vh;
+  width: 100%;
+  border-bottom: 1px solid rgba(243, 192, 201, 0.925);
+  padding: 4.5px 30px;
+}
+
+.title button {
+  height: 30px;
+}
+
+.recent-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.add-score {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+}
+
+.add-score form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.add-score form input {
+  box-shadow: 5px 5px 5px rgb(228, 89, 112), -2px -2px 2px rgb(228, 89, 112);
+  padding: 15px 6px;
+  border-radius: 5px;
+}
+
+.add-score form input::placeholder {
+  color: gray;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.add-score form button {
+  width: 20%;
+  align-self: flex-end;
+}
