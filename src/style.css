@@ -74,6 +74,18 @@ main {
   flex-direction: column;
 }
 
+.user {
+  background: pink;
+  text-transform: capitalize;
+  padding-left: 10px;
+}
+
+.score {
+  background: rgb(180, 41, 64);
+  color: white;
+  padding-left: 10px;
+}
+
 .add-score {
   display: flex;
   flex-direction: column;

@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leaderboard App</title>
-     <link rel="stylesheet" href="style.css">
+    
+    
 </head>
 <body>
     <header></header>
@@ -15,7 +16,7 @@
         <section id="recent-score" class="recent-score">
             <div class="title">
              <p> Recent Scores </p>
-             <button type="submit"> Refresh </button>
+             <button class="refreshBtn"> Refresh </button>
             </div>
             <div class="recent-content">
                 <table >
@@ -23,20 +24,23 @@
                     <th>Name</th>
                     <th>Score</th>
                  </tr>
+                 <tbody class="table"></tbody>
+                
                 </table>
             </div>
         </section>
         <section id="add-score" class="add-score">
             <p> Add Your Score </p>
-            <form>
-              <input type="text" id="name" name="name" placeholder="Your Name">
-              <input type="text"  id="score" name="score" placeholder="Your Score">
-              <button type="submit">Add</button>
+            <form class="form">
+              <input type="text" id="user" name="user" placeholder="Your Name">
+              <input type="number"  id="score" name="score" placeholder="Your Score">
+              <button type="submit" class="addBtn">Add</button>
+               
             </form>
         </section>
     </div>
     </main>
     <footer></footer>
-    <script src="./index.js"></script>
+     
 </body>
 </html>
