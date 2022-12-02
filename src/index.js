@@ -15,8 +15,8 @@ const displayInfo = (info) => {
   listTable.innerHTML = '';
   info.forEach((e) => {
     listTable.innerHTML += `<tr>
-      <td class="user">${e.user}</td>
-      <td class="score">${e.score}</td>
+      <td class="user"><span class="user-icon"></span> ${e.user} : ${e.score}</td>
+      
       </tr>`;
   });
 };
@@ -61,7 +61,20 @@ addForm.addEventListener('submit', (e) => {
   addForm.reset();
 });
 
+document.addEventListener('DOMContentLoaded', getInfo);
+
 refreshBtn.addEventListener('click', async () => {
   listTable.innerHTML = '';
   await getInfo();
 });
+
+// const gameTitle = "LeaderBoard is My Cool First Game Enjoy it!"
+// let index = 0;
+// const writeText = () => {
+//   document.main.innerHTML = gameTitle.slice(0,index);
+//   index++;
+//   if(index > gameTitle.length-1){
+//     index = 0;
+//   }
+// }
+// setInterval(writeText,100);
